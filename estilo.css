@@ -1,0 +1,150 @@
+/*defini uma largura máxima do body como pequena, pois além de não ter muito conteúdo no site, isso facilita muito, pois tira a necessidade de criar configurações muito específicas para dispositivos móveis*/
+body {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #f0f0f0;
+  color: #11111b;
+  font-family: Arial;
+}
+
+/*Único momento que achei interessante colocar o layout de grid, foi no header do texto, pois assim facilitava o posicionamento que eu desejava, para o elemento de imagem, e de texto*/
+.Head {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+/*acabei mais fazendo edição aninhada de tags, do que usar IDs, achei mais prático, visto que eu não estava repetindo com frequência tags dentro de uma arvore*/
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  h1, h2 {
+    margin: 0px;
+  }
+  p {
+    margin-top: 5px;
+    font-style: italic;
+    color: #7c7f93; 
+    width: 300px;
+  }
+}
+
+img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.Titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.menu {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  a,
+
+  a:link {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: solid #181825 2px;
+    border-radius: 10px;
+    background-color: #dce0e8;
+  }
+
+  a:hover {
+    background-color: #a6e3a1;
+  }
+
+  a:visited {
+    color: #5c5f77;
+  }
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px
+}
+
+li {
+  float: right;
+  text-color: #4c4f69;
+}
+
+#miniTitulo {
+  margin-top: 50px;
+}
+
+hr{
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 550px;
+  justify-content: left;
+}
+
+p {
+  width: 550px;
+}
+
+.lista {
+  gap: 10px;
+  margin-left: -10px;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-weight: bold;
+}
+
+#portfolio {
+  margin-bottom: 5px;
+}
+
+#paragrafo {
+  margin-top: 5px;
+}
+
+.sessão {
+  p {
+    margin-left: 10px;
+    width: 400px;
+  }
+}
+
+.divs {
+  max-width: 475px;
+  margin: 10px;
+  padding-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  h1 {
+    margin-left: 10px;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.links {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+#Atacado {
+  margin-top: 30px;
+}
+/*Eu fui aprendendo muita coisa enquanto escrevia esse código, então pode ter tido algumas coisas inconsistentes (principalmente pelo fato de eu nunca ter utilizado algumas IDs que criei, depois que descobri que tem como editar tags de forma aninhada)*/

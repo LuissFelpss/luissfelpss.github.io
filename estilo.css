@@ -1,4 +1,4 @@
-/*defini uma largura máxima do body como pequena, pois além de não ter muito conteúdo no site, isso facilita muito, pois tira a necessidade de criar configurações muito específicas para dispositivos móveis*/
+/*defini uma largura máxima do body como pequena*/
 body {
   max-width: 600px;
   margin: 50px auto;
@@ -6,7 +6,7 @@ body {
   color: #11111b;
   font-family: Arial;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .meu-menu {
     width: 100%; /* O menu ocupa a largura total */
     flex-direction: column; /* Em celular, os itens vão em coluna */

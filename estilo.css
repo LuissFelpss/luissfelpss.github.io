@@ -7,7 +7,7 @@ body {
   font-family: Arial;
 }
 @media (max-width: 600px) {
-  .meu-menu {
+  .menu {
     width: 100%; /* O menu ocupa a largura total */
     flex-direction: column; /* Em celular, os itens vão em coluna */
   }

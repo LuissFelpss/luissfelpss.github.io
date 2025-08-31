@@ -10,6 +10,10 @@ body {
   .menu {
     width: 100%; /* O menu ocupa a largura total */
     flex-direction: column; /* Em celular, os itens vão em coluna */
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 /*Único momento que achei interessante colocar o layout de grid, foi no header do texto, pois assim facilitava o posicionamento que eu desejava, para o elemento de imagem, e de texto*/
